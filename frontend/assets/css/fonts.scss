@@ -1,0 +1,82 @@
+$montserratPath: 'assets/fonts/Montserrat/';
+$openSansPath: 'assets/fonts/OpenSans/';
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    url('#{$montserratPath}Montserrat-Medium.woff2') format('woff2'),
+    url('#{$montserratPath}Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    url('#{$montserratPath}Montserrat-Bold.woff2') format('woff2'),
+    url('#{$montserratPath}Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    url('#{$montserratPath}Montserrat-Regular.woff2') format('woff2'),
+    url('#{$montserratPath}Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('#{$openSansPath}OpenSans-Bold.woff2') format('woff2'),
+    url('#{$openSansPath}OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    url('#{$montserratPath}Montserrat-SemiBold.woff2') format('woff2'),
+    url('#{$montserratPath}Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('#{$openSansPath}OpenSans-Regular.woff2') format('woff2'),
+    url('#{$openSansPath}OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('#{$openSansPath}OpenSans-SemiBold.woff2') format('woff2'),
+    url('#{$openSansPath}OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src:
+    url('#{$openSansPath}OpenSans-Light.woff2') format('woff2'),
+    url('#{$openSansPath}OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

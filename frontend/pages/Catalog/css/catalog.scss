@@ -1,0 +1,53 @@
+.catalog-container {
+  margin-bottom: 40px;
+}
+
+.catalog {
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-right: 30px;
+  }
+
+  &__backto-btn {
+    margin-left: auto;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__results {
+    margin-right: 15px;
+    color: rgb(38, 38, 38);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+  &__backto-btn {
+    display: flex;
+    align-items: center;
+    color: rgb(88, 135, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-decoration-line: underline;
+  }
+  &__title {
+    color: rgb(38, 38, 38);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+  }
+}
+
+@import './catalog_mobile.scss';

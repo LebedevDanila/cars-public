@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  # chmod o+w ./storage/ -R
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile_dev
+    ports:
+      - "9000:9000"
+    environment:
+      CONTAINER_ROLE: app
+    volumes:
+      - ./backend/:/var/www/html/
+#      - /var/www/html/vendor
+    depends_on:
+      - db
+      - redis
+    container_name: backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile_dev
+    ports:
+      - "3000:3000"
+      - "24678:24678"
+    volumes:
+      - ./frontend/:/nuxt/
+#      - /nuxt/node_modules
+    depends_on:
+      - backend
+    container_name: frontend
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_DATABASE: cnxcars
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - "3306:3306"
+    volumes:
+      - cnxcars_db_data:/var/lib/mysql
+    container_name: db
+
+  redis:
+    image: redis:5.0.5
+    ports:
+     - "6379:6379"
+    depends_on:
+      - db
+    container_name: redis
+
+volumes:
+  cnxcars_db_data:

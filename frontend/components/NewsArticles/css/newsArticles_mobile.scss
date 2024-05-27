@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  .mainRating {
+    &-content {
+      &__inner {
+        flex-wrap: wrap;
+        &-left {
+          width: 100%;
+          padding-right: 0;
+          margin-bottom: 20px;
+        }
+        &-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

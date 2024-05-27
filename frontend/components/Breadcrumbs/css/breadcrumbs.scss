@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding: 10px 0 40px;
+  &-list {
+    font-size: 12px;
+    margin-bottom: -10px;
+    &__item {
+      font-weight: 500;
+      letter-spacing: 0.24px;
+      margin-bottom: 10px;
+    }
+    &__link {
+      display: flex;
+      color: var(--grey);
+      font-weight: normal;
+      &::after {
+        content: '/';
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@import './breadcrumbs_mobile.scss';

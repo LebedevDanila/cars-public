@@ -1,0 +1,15 @@
+.mainRating {
+  &-content {
+    &__inner {
+      &-right {
+        width: 620px;
+      }
+      &-left {
+        width: calc(100% - 620px);
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+@import './newsArticles_mobile.scss';

@@ -1,0 +1,65 @@
+.models {
+  &__container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  &__caption {
+    color: rgb(38, 38, 38);
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    border-bottom: 2px solid rgb(38, 38, 38);
+  }
+  &__card {
+    position: relative;
+    padding: 0 0 6px;
+    cursor: pointer;
+  }
+  &__card-state {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 4px 9px;
+    border-radius: 90px;
+    background: rgb(62, 194, 76);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: left;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 15px;
+    margin: 20px 0;
+  }
+  &__card-img {
+    margin-bottom: 15px;
+    img {
+      object-fit: cover;
+      max-height: 200px;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__card-img-descr {
+    padding: 0 6px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  &__btn {
+    width: 100%;
+  }
+}

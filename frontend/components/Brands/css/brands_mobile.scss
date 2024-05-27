@@ -1,0 +1,64 @@
+@media (max-width: 1024px) {
+  .brands {
+    &-list {
+      &__item {
+        &:nth-child(n + 8) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .brands {
+    padding: 10px 0;
+    &__inner {
+      &-right {
+        width: 86px;
+      }
+      &-left {
+        width: calc(100% - 86px);
+        padding-right: 10px;
+      }
+    }
+    &-list {
+      &__item {
+        &:nth-child(n + 6) {
+          display: none;
+        }
+      }
+      &__link {
+        height: 30px;
+        padding: 0;
+      }
+    }
+    &-btn {
+      width: 86px;
+      height: 30px;
+      background: var(--blue);
+      color: var(--white);
+      fill: var(--white);
+      font-size: 8px;
+      &::before {
+        display: none;
+      }
+      &__icon {
+        width: 13px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .brands {
+    &-list {
+      &__item {
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+}

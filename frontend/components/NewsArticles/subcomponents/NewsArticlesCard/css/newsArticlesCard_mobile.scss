@@ -1,0 +1,128 @@
+@media (max-width: 767px) {
+  .newsCard {
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--stroke);
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    &--no-border {
+      &::before {
+        display: none;
+      }
+    }
+    &-img {
+      &--m-160 {
+        height: 160px;
+        img {
+          border-radius: 0;
+        }
+      }
+      &--150 {
+        height: 200px;
+      }
+    }
+    &-info {
+      padding: 10px 10px 20px;
+    }
+    &-tags {
+      &__item {
+        font-size: 8px;
+      }
+    }
+    &-title {
+      font-size: 14px;
+    }
+
+    &-row {
+      padding: 10px 10px 9px 10px;
+      &__inner {
+        &-right {
+          width: 90px;
+        }
+        &-left {
+          width: calc(100% - 90px);
+        }
+      }
+      &__img {
+        width: 90px;
+        height: 90px;
+      }
+      &__title {
+        font-size: 12px;
+      }
+      &__link {
+        font-size: 10px;
+        &-icon {
+        }
+      }
+    }
+  }
+
+  .mainIntro {
+    &__inner {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+    &__group {
+      flex-wrap: wrap;
+      &-left {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
+      &-right {
+        width: 100%;
+      }
+    }
+    &-list {
+      &__item {
+        &:nth-child(n + 3) {
+          display: none;
+        }
+      }
+    }
+    &-card {
+      height: 170px;
+      &--big {
+        height: 400px;
+      }
+      &--m-280 {
+        height: 280px;
+      }
+      &__info {
+        padding: 10px 15px;
+        &--big {
+          padding: 15px;
+        }
+      }
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainIntro {
+    &__inner {
+      &-right {
+        display: none;
+      }
+      &-left {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &-card {
+      &--mh-600 {
+        height: 100%;
+      }
+    }
+  }
+}
